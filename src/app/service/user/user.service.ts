@@ -60,6 +60,5 @@ export class UserService {
     formData.append('isNonLocked', JSON.stringify(user.notLocked!));
     formData.append('profileImage',profileImage);
     return formData;
-    
   }
 }
