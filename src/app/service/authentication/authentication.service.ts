@@ -1,9 +1,9 @@
 import { HttpClient, HttpErrorResponse, HttpResponse } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { UserEntity } from 'src/app/model/userEntity';
 import { environment } from '../../../environments/environment';
 import { JwtHelperService } from "@auth0/angular-jwt";
+import { UserEntity } from 'src/app/model/UserEntity';
 
 @Injectable({
   providedIn: 'root'

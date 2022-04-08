@@ -1,10 +1,10 @@
 import { HttpClient, HttpErrorResponse, HttpEvent } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { UserEntity } from 'src/app/model/userEntity';
+
 import { environment } from '../../../environments/environment';
-import { isNull } from '@angular/compiler/src/output/output_ast';
-import { CustomHttpResponse } from '../../model/custom-http-response';
+import { UserEntity } from 'src/app/model/UserEntity';
+import { CustomHttpResponse } from 'src/app/model/custom-http-response';
 
 
 @Injectable({
