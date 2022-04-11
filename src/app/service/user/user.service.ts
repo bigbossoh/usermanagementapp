@@ -48,9 +48,9 @@ export class UserService {
   public getUsersFromLocalCache():UserEntity[] {
       return JSON.parse(localStorage.getItem('user')!);
    }
-  createUserFormDate(loggedInUsername:string,user:UserEntity, profileImage: File):FormData{
+  createUserFormDate(loggedInUsername:string | null,user:UserEntity, profileImage: File):FormData{
     const  formData = new FormData();
-    formData.append('currentUsername',loggedInUsername);
+    formData.append('currentUsername',loggedInUsername!);
     formData.append('familyName', user.familyName!);
     formData.append('remainingName', user.remainingName!);
     formData.append('username', user.username!);
